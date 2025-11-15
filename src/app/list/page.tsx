@@ -20,7 +20,7 @@ function ListPage() {
       <Filter/>
       {/* PRODUCT */}
       <h1 className='text-xl font-semibold mt-10'>Shose For You!</h1>
-      <ProductList/>
+      <ProductList categoryId={process.env.PRODUCTS_ID!} limit={4}/>
     </div>
   )
 }
